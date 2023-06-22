@@ -1,0 +1,14 @@
+.main_container_cart {
+    background: rgb(252, 252, 252);
+    background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgba(62, 117, 154, 1) 98%);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container_cart p{
+    font-size: 70px;
+    font-weight: 700;
+}

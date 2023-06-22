@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main_navbar {
+    height: 12vh;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.main_navbar h2 {
+    font-size: 2.3rem;
+    padding: 3rem;
+    letter-spacing: 2px;
+    font-family: 'Style Script', cursive;
+    cursor: pointer;
+}
+
+
+.navbar_links_to_navigate {
+    display: flex;
+    gap: 11px;
+    justify-content: flex-end;
+}
+
+.navbar_links_to_navigate li {
+    border: 3px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: .4rem 2rem;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+.navbar_links_to_navigate li:hover {
+    border: 3px solid rgb(73, 118, 152);
+    color: rgb(73, 118, 152);
+    border-radius: 4px;
+}
+
+
+/* button style */
+
+.btn1_div {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 3rem;
+}
+
+.btn1_div span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.btn1 {
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px 25px;
+    color: black;
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .3s ease-in;
+}
+
+.btn1:hover {
+    border: 1px solid black;
+    transition: .1s ease-in;
+}
+
+.btn2 {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* media queries for navbar */
+
+
+@media screen and (max-width : 900px) {
+
+    .navbar_links_to_navigate {
+        display: none;
+    }
+
+    .navbar_links_to_navigate_mobile_responsive {
+        position: absolute;
+        display: block;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        top: 8%;
+        width: 100%;
+        background-color: rgb(255, 185, 185);
+    }
+
+    ul li {
+        padding: 1rem;
+        color: black;
+        font-weight: bolder;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .btn1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn2 {
+        position: absolute;
+        display: inline;
+    }
+}
+
+

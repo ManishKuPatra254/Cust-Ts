@@ -1,0 +1,91 @@
+.heading_tag {
+    margin: 50px 45px;
+}
+
+.main_card_new_drops {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.sub_new_drops_card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    border-radius: 5px;
+    margin: 40px 0px;
+    flex-basis: 30%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.sub_new_drops_card img {
+    width: 100%;
+    height: auto;
+    transition: .2s ease-in-out;
+    transform: scale(1);
+}
+
+.sub_new_drops_card img:hover {
+    filter: drop-shadow(12px);
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.sub_new_drops_card h3 {
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.sub_new_drops_card p {
+    padding: 10px 32px;
+    font-size: 1rem;
+}
+
+.sub_new_drops_card button {
+    margin-top: 23px;
+    width: 60%;
+    background-color: rgb(255, 108, 108);
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .1s ease-in-out;
+}
+
+.sub_new_drops_card button:hover {
+    color: white;
+    background-color: rgb(42, 65, 79);
+    transition: .1s ease-in-out;
+}
+
+
+@media screen and (max-width : 900px) {
+    .sub_new_drops_card p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .sub_new_drops_card button {
+        width: 100%;
+        margin-top: 23px;
+        background-color: rgb(255, 108, 108);
+        border: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+}
