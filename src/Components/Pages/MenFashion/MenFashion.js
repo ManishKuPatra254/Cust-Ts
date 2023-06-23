@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import './MenFashion.css';
+import { menData } from './MenFashionData';
 
 export function MenFashion() {
     return (
@@ -8,223 +9,17 @@ export function MenFashion() {
                 <p>Shop Men</p>
             </div>
 
-            <div className='main_card_new_drops'>
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71bJ0f1L9gL._UL1500_.jpg" alt="" />
-                    <p>Amazon Essentials Men's Short-Sleeve Crewneck T-Shirt</p>
-                    <h3>₹1749</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/61LYRZ-uH6L._UL1500_.jpg" alt="" />
-                    <p>Gildan Men's G2000 Ultra Cotton Adult T-Shirt</p>
-                    <h3>₹749</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/51w0lHFG30L.jpg" alt="" />
-                    <p>Soffe Men's Short-Sleeve Cotton T-Shirt</p>
-                    <h3>₹549 </h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/51oqHcH9mcL._UL1440_.jpg" alt="" />
-                    <p> Men's Cotton Buffalo Check  , Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear  </p>
-                    <h3>₹1199</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71UlMQTeBNL._UL1500_.jpg" alt="" />
-                    <p>Amazon Essentials Women's Regular-Fit Cotton Pique Polo Shirt</p>
-                    <h3>₹799</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71YtsZ2X+pL._UL1500_.jpg" alt="" />
-                    <p>Under Armour Men's Tech 2.0 V-Neck Short-Sleeve T-Shirt</p>
-                    <h3>₹ 588</h3>
-                </div>
-
-
-                {/* 2nd row */}
-
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71DQ6U-OVQL._UY879_.jpg" alt="" />
-                    <p>Amazon Essentials Men's Short-Sleeve Crewneck T-Shirt</p>
-                    <h3>₹1999</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/31nOzAqaTFL.jpg" alt="" />
-                    <p>Diverse Men's Regular Fit Formal Shirt </p>
-                    <h3>₹949</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/91wYL9d+t7L._UL1500_.jpg" alt="" />
-                    <p>Diverse Men's Regular Formal Shirt </p>
-                    <h3>₹539 </h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/61TDdzI0nGL._UL1440_.jpg" alt="" />
-                    <p> Majestic Man Slim Fit Cotton Blend Formal Shirts for Men  </p>
-                    <h3>₹1499</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71Ut3Q9EURL._UL1500_.jpg" alt="" />
-                    <p>BE ACTIVE Formal Shirt for Men|| Shirt for Men|| Cotton Shirt for Men</p>
-                    <h3>₹399</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/91EWDo4+-XL._UL1500_.jpg" alt="" />
-                    <p>Diverse Men Cotton Formal Shirt </p>
-                    <h3>₹ 799</h3>
-                </div>
-
-
-                {/* 3rd row */}
-
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71O1QaI-sbL._UL1500_.jpg" alt="" />
-                    <p>AELOMART Men's T Shirt-(Amt250105-P_Green) </p>
-                    <h3>₹449</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/61CxYdukSIL._UL1500_.jpg" alt="" />
-                    <p>LEOTUDE Men's Oversized Cottonblend Half Sleeve Printed Tshirt </p>
-                    <h3>₹249</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/61PqGOxtCwL._UL1500_.jpg" alt="" />
-                    <p>LEOTUDE Cotton Blend Half Sleeve Dragon Printed Oversized T-Shirts for Men</p>
-                    <h3>₹349 </h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71GITfTSeRL._UL1500_.jpg" alt="" />
-                    <p> TOPLOT T-Shirt for Men Casual Printed with Short Sleeve (Mens-T-shirt-5056)   </p>
-                    <h3>₹599</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/61NyTXIlJvL._UL1350_.jpg" alt="" />
-                    <p>Bewakoof Men's NASA Printed 100% Cotton T-Shirt - Regular Fit, Round Neck, Half Sleeves</p>
-                    <h3>₹499</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71zaAby0-FL._UL1500_.jpg" alt="" />
-                    <p>BLIVE Printed Men Round Neck Full Sleeve T-Shirt </p>
-                    <h3>₹ 388</h3>
-                </div>
-
-                {/* 4th row */}
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/51tJ1olZaFL._UL1000_.jpg" alt="" />
-                    <p>EYEBOGLER Men's Designer Half Sleeves Hooded Neck Printed T-Shirt Black </p>
-                    <h3>₹1949</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/61LYRZ-uH6L._UL1500_.jpg" alt="" />
-                    <p>Gildan Men's G2000 Ultra Cotton Adult T-Shirt</p>
-                    <h3>₹749</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71TqPqvJCQL._UL1440_.jpg" alt="" />
-                    <p>BULLMER Mens Regular Fit Printed Cotton Polo Tshirt</p>
-                    <h3>₹589 </h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/51oqHcH9mcL._UL1440_.jpg" alt="" />
-                    <p> Men's Cotton Buffalo Check  , Slim Fit Casual Shirt with Pocket, Full Sleeve Shirt for Formal & Casual Wear  </p>
-                    <h3>₹1199</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/61iKf3LSBHL._UL1440_.jpg" alt="" />
-                    <p>The Souled Store Men Official Thor: Over Thunder Grey Printed Oversized T-Shirts </p>
-                    <h3>₹499</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/51qbneLAneL._UL1100_.jpg" alt="" />
-                    <p>Bewakoof Men Batman Vengeance Printed Round Neck Full Sleeve T-Shirt</p>
-                    <h3>₹ 388</h3>
-
-                </div>
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71bJ0f1L9gL._UL1500_.jpg" alt="" />
-                    <p>Amazon Essentials Men's Short-Sleeve Crewneck T-Shirt</p>
-                    <h3>₹1749</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/81-HOuh1-ZS._UL1500_.jpg" alt="" />
-                    <p>Gildan Men's Cotton Adult T-Shirt</p>
-                    <h3>₹449</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/51w0lHFG30L.jpg" alt="" />
-                    <p>Soffe Men's Short-Sleeve Cotton T-Shirt</p>
-                    <h3>₹549 </h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/51syzdDo6qL._UL1350_.jpg" alt="" />
-                    <p>Bewakoof Men's Printed 100% Cotton T-Shirt - Regular Fit, Round Neck, Half Sleeves  </p>
-                    <h3>₹899</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/71UlMQTeBNL._UL1500_.jpg" alt="" />
-                    <p>Amazon Essentials Women's Regular-Fit Cotton Pique Polo Shirt</p>
-                    <h3>₹799</h3>
-
-                </div>
-
-                <div className="sub_new_drops_card">
-                    <img src="https://m.media-amazon.com/images/I/613KABeTdwL._UL1500_.jpg" alt="" />
-                    <p>LEOTUDE Cotton Blend Half Sleeve Printed Oversized T-Shirts for Men </p>
-                    <h3>₹ 588</h3>
-
-                </div>
+            <div className="sub_new_drops_cards">
+                {
+                    menData.map(cardsItems => (
+                        <div className='sub_container_drops_two' key={cardsItems.id}>
+                            <img src={cardsItems.images} alt="" />
+                            <p>{cardsItems.names}</p>
+                            <h3>{cardsItems.price}</h3>
+                        </div>
+                    ))}
             </div>
+
         </Fragment>
     )
 }
