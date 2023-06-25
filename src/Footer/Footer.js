@@ -53,7 +53,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Cust Ts. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Cust Ts. Created By Manish All rights reserved.</p>
         </div>
       </div>
     </footer>

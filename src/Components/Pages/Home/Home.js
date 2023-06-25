@@ -3,6 +3,7 @@ import { HeroSliderSection } from '../../HeroSelection/HeroSection'
 import { UpcomingGalleryNew } from '../../../Gallery/UpcomingGallery'
 import { NewGallery } from '../../../NewGallery/NewGallery';
 import { Couples } from '../../../Couples/Couples';
+import { AccessoriesHome } from '../../../AccessoriesHome/Accessories';
 
 export function Home() {
     return (
@@ -11,6 +12,7 @@ export function Home() {
             <UpcomingGalleryNew />
             <NewGallery />
             <Couples />
+            <AccessoriesHome />
         </div>
     )
 }

@@ -35,6 +35,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .sub_container_drops_two img {
