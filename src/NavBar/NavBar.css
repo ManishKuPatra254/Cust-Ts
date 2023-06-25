@@ -10,9 +10,13 @@
 }
 
 .main_navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
     height: 12vh;
     margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between
@@ -128,5 +132,3 @@
         display: inline;
     }
 }
-
-

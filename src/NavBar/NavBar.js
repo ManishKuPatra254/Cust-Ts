@@ -39,7 +39,7 @@ export function NavBar() {
                     {
                         isAuthenticated &&
                         <span>{user.name}</span>
-                    },
+                    }
 
 
                     {
@@ -48,12 +48,12 @@ export function NavBar() {
                                 <button className='btn1' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                     Log Out
                                 </button>
-                        
+
                             </Fragment>
                         ) : (
                             <Fragment>
                                 <button className='btn1' onClick={() => loginWithRedirect()}
-                                   
+
                                 >Log In</button>
 
                             </Fragment>

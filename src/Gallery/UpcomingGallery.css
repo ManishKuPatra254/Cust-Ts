@@ -12,14 +12,12 @@
 }
 
 .sub_new_drops_card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    border-radius: 5px;
-    margin: 40px 0px;
-    flex-basis: 30%;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    width: 70%;
+    text-align: center;
+    justify-content: space-around;
 }
 
 .sub_new_drops_card img {
@@ -31,23 +29,23 @@
 
 .sub_new_drops_card img:hover {
     filter: drop-shadow(12px);
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: .2s ease-in-out;
 }
 
-.sub_new_drops_card h3 {
-    font-size: 1.3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    cursor: pointer;
+.sub_new_drops_card_one{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px;
+    margin: auto;
+    border-radius: 5px;
+    margin: 40px 0px;
+    flex-basis: 30%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
-.sub_new_drops_card p {
-    padding: 10px 32px;
-    font-size: 1rem;
-}
-
-.sub_new_drops_card button {
+.sub_new_drops_card_one button {
     margin-top: 23px;
     width: 60%;
     background-color: rgb(255, 108, 108);

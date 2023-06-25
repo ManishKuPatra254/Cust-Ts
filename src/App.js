@@ -8,6 +8,7 @@ import { WomenFashion } from './Components/Pages/WomenFashion/WomenFashion';
 import { Accessories } from './Components/Pages/Accessories/Accessories';
 import { AddtoCart } from './Components/Pages/Add To Cart/AddToCart';
 import { Footer } from './Footer/Footer';
+import { Checkout } from './Checkout/Checkout';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
           <Route path='/womenfashion' element={<WomenFashion />}></Route>
           <Route path='/accessories' element={<Accessories />}></Route>
           <Route path='/addtocart' element={<AddtoCart />}></Route>
-          
-        
+          <Route path='/checkout/:id' element={<Checkout />} />
+
+
         </Routes>
         <Footer />
       </BrowserRouter>
