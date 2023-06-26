@@ -51,14 +51,33 @@
     transition: .2s ease-in-out;
 }
 
-@media screen and (max-width : 1050px) {
-    .main_card_new_drops {
+
+@media only screen and (max-width: 768px) {
+    .main_container_men {
+        width: 90%;
+    }
+
+    .sub_new_drops_cards {
+        width: 90%;
+    }
+
+    .sub_container_drops_two {
+        flex-basis: 45%;
+        margin: 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main_container_men {
         width: 100%;
     }
 
-    .sub_new_drops_card {
+    .sub_new_drops_cards {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+    }
+
+    .sub_new_drops_cards {
+        flex-basis: 90%;
+        margin: 10px 0px;
     }
 }

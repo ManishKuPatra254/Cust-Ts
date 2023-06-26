@@ -33,7 +33,7 @@
     transition: .2s ease-in-out;
 }
 
-.sub_new_drops_card_one{
+.sub_new_drops_card_one {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 10px;
     margin: auto;
@@ -65,8 +65,14 @@
     transition: .1s ease-in-out;
 }
 
+@media screen and (max-width: 900px) {
 
-@media screen and (max-width : 900px) {
+    .main_card_new_drops,
+    .sub_new_drops_card,
+    .sub_new_drops_card_one {
+        width: 100%;
+    }
+
     .sub_new_drops_card p {
         display: flex;
         justify-content: center;

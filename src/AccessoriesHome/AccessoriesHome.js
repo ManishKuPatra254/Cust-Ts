@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import './Accessories.css';
+import './AccessoriesHome.css';
 import { accessoriesData } from './AccessoriesDataHome';
 export function AccessoriesHome() {
 
