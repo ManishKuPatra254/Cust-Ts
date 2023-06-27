@@ -12,8 +12,6 @@ export function NavBar() {
     const { logout } = useAuth0();
     const { isAuthenticated, user } = useAuth0();
 
-
-
     const navigate = useNavigate()
 
     function handleNavigateHome() {
@@ -22,18 +20,51 @@ export function NavBar() {
 
     const [displayChangeMobile, setDisplayChangeMobile] = useState(false)
 
+    const [activeItem, setActiveItem] = useState('home');
+
+    const handleNavbarClick = (item) => {
+        setActiveItem(item);
+    };
+    
+
     return (
         <Fragment>
-            <nav className='main_navbar'>
+            <nav className="main_navbar">
 
                 <h2 onClick={handleNavigateHome}>CustTs</h2>
                 <ul className={displayChangeMobile ? 'navbar_links_to_navigate_mobile_responsive' : 'navbar_links_to_navigate'} onClick={() => setDisplayChangeMobile(false)}>
-                    <Link to='/'><li>Home</li></Link>
-                    <Link to='/menfashion'><li>Men</li></Link>
-                    <Link to='/womenfashion'><li>Women</li></Link>
-                    <Link to='/accessories'><li>Accessories</li></Link>
-                    <Link to='/addtocart'><li>Add to Cart</li></Link>
+                    <Link to='/'> <li
+                        className={activeItem === 'home' ? 'active' : ''}
+                        onClick={() => handleNavbarClick('home')}
+                    >
+                        Home
+                    </li></Link>
+                    <Link to='/menfashion'> <li
+                        className={activeItem === 'men' ? 'active' : ''}
+                        onClick={() => handleNavbarClick('men')}
+                    >
+                        Men
+                    </li></Link>
+                    <Link to='/womenfashion'> <li
+                        className={activeItem === 'women' ? 'active' : ''}
+                        onClick={() => handleNavbarClick('women')}
+                    >
+                        Women
+                    </li></Link>
+                    <Link to='/accessories'><li
+                        className={activeItem === 'accessories' ? 'active' : ''}
+                        onClick={() => handleNavbarClick('accessories')}
+                    >
+                        Accessories
+                    </li></Link>
+                    <Link to='/addtocart'> <li
+                        className={activeItem === 'addtocart' ? 'active' : ''}
+                        onClick={() => handleNavbarClick('addtocart')}
+                    >
+                        Add to cart
+                    </li></Link>
                 </ul>
+
                 <div className='btn1_div'>
 
                     {

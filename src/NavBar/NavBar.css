@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 
 * {
@@ -19,7 +18,7 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .main_navbar h2 {
@@ -30,7 +29,6 @@
     cursor: pointer;
 }
 
-
 .navbar_links_to_navigate {
     display: flex;
     gap: 11px;
@@ -38,23 +36,23 @@
 }
 
 .navbar_links_to_navigate li {
-    border: 3px solid transparent;
+    border: transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     padding: .4rem 2rem;
     font-weight: bolder;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.navbar_links_to_navigate li:hover {
-    border: 3px solid rgb(73, 118, 152);
-    color: rgb(73, 118, 152);
+.navbar_links_to_navigate li.active {
+    background-color: rgb(50, 77, 98);
+    border: transparent;
+    color: rgb(255, 255, 255);
     border-radius: 4px;
 }
 
-
 /* button style */
-
 .btn1_div {
     display: flex;
     gap: 12px;
@@ -96,10 +94,7 @@
 }
 
 /* media queries for navbar */
-
-
-@media screen and (max-width : 900px) {
-
+@media screen and (max-width: 900px) {
     .navbar_links_to_navigate {
         display: none;
     }

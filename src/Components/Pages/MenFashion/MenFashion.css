@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.main_container_men p{
+.main_container_men p {
     font-size: 70px;
     font-weight: 700;
 }
@@ -51,6 +51,12 @@
     transition: .2s ease-in-out;
 }
 
+.btn_add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
 
 @media only screen and (max-width: 768px) {
     .main_container_men {

@@ -2,7 +2,7 @@ import './AddToCart.css'
 import { useSelector } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
-
+import toast, { Toaster } from 'react-hot-toast'
 
 
 export function AddtoCart() {
@@ -14,8 +14,16 @@ export function AddtoCart() {
     }
 
 
+    function handleClick() {
+        toast.success('Redirecting to payments');
+    }
+
+
+
     const dataHere = useSelector(state => state.cartsadd.addTocart);
     console.log(dataHere);
+
+    // const addToCartMen = useSelector(state => state.cartsadd.addTocart)
 
     return (
         <>
@@ -30,7 +38,8 @@ export function AddtoCart() {
                             <p>{itemsData.names}</p>
                             <h3>{itemsData.price}</h3>
                             <div>
-                                <button onClick={() => handleNavigateCheckout(itemsData)}>Checkout</button>
+                                <button onClick={() => handleNavigateCheckout(itemsData)} onClickCapture={handleClick}>Checkout</button>
+                                <Toaster />
                             </div>
                         </div>
                     ))

@@ -20,8 +20,42 @@ const cart = createSlice({
                 alert('Already Added 👌');
             }
         },
+
+        addToCartMen: (state, action) => {
+            const allData = action.payload;
+            const ifCheckDataReceived = state.addTocart.find(newCarts => newCarts.id === allData.id)
+            if (ifCheckDataReceived === undefined) {
+                state.addTocart.push(action.payload)
+
+            }
+            else {
+                alert('Not Done')
+            }
+        },
+        addToCartWomen: (state, action) => {
+            const allData = action.payload;
+            const ifCheckDataReceived = state.addTocart.find(newCarts => newCarts.id === allData.id)
+            if (ifCheckDataReceived === undefined) {
+                state.addTocart.push(action.payload)
+
+            }
+            else {
+                alert('Not Done')
+            }
+        },
+        addToCartAccessories: (state, action) => {
+            const allData = action.payload;
+            const ifCheckDataReceived = state.addTocart.find(newCarts => newCarts.id === allData.id)
+            if (ifCheckDataReceived === undefined) {
+                state.addTocart.push(action.payload)
+
+            }
+            else {
+                alert('Not Done')
+            }
+        },
     },
 });
 
-export const { cardsfromMain } = cart.actions
+export const { cardsfromMain, addToCartMen, addToCartWomen, addToCartAccessories } = cart.actions
 export default cart;
