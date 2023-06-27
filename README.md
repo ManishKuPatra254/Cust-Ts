@@ -10,3 +10,9 @@ The Ecommerce Application named Cust TS is a web-based platform designed to faci
 5. Payment Processing: Integration with a payment gateway to securely process payments.
 6. Order Management: Users can view their order history and check the status of their orders.
 
+# Requirements . . .
+React JS
+Redux
+Material UI
+Auth0
+React Router Dom
