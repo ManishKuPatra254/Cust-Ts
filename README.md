@@ -11,8 +11,10 @@ The Ecommerce Application named Cust TS is a web-based platform designed to faci
 6. Order Management: Users can view their order history and check the status of their orders.
 
 # Requirements . . .
-1.React JS
-2.Redux
-3.Material UI
-4.Auth0
-5.React Router Dom
+ <ul>
+                                  <li>React JS</li>
+                                    <li>React Router Dom</li>
+                                    <li>Material UI</li>
+                                    <li>Redux</li>
+                                    <li>Auth0</li>
+                                </ul>
